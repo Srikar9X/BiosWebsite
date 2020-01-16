@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <metacharset = "utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>compositemiddle</title>
+          <style>
+               .button
+               {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 16px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+               }
+
+               .button1
+               {
+                    background-color: white;
+                    color: #4CAF50;
+                    border: 5px solid #4CAF50;
+               }
+
+               .button1:hover
+               {
+                    background-color: #4CAF50;
+                    color: white;
+               }
+          </style>
+          <script src = "compositemiddleencripted.js">
+          </script>
+     </head>
+     <body background = "background.jpg">
+          <center>
+               <table background= "table.jpg">
+                    <tr>
+                         <td align = "center">
+                              <button onclick = "compositemiddlecalc ()" class = "button button1"><font size = "7"><b><i>Add or Remove Shapes</i></b></font></button>
+                              <button onclick = "refreshmiddle ()" class = "button button1"><font size = "7"><b><i>Refresh</i></b></font></button>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td bgcolor = "#0033cc" align = "center">
+                              <font color = "gold">
+                                   <h1><b>Please hit the refresh button if you want to start adding the shapes freshly.</b></h1>
+                              </font>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td align = "center" bgcolor = "white">
+                              <canvas id = "can3" width = "1200" height = "1200">Your Browser doesn't support the HTML Canvas tag</canvas>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td align = "center">
+                              <table bgcolor = "#ccffff">
+                                   <tr>
+                                        <td align = "right">
+                                             <font size = "3" color ="blue">Moment of Inertia about X-Axis: </font>
+                                        </td>
+                                        <td align = "left">
+                                             <input id = "zeltron" type = "text" size = "40" style = "background-color:yellow;">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td align = "right">
+                                             <font size = "3" color ="blue">Moment of Inertia about Y-Axis: </font>
+                                        </td>
+                                        <td align = "left">
+                                             <input id = "zeltron1" type = "text" size = "40" style = "background-color:yellow;">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td align = "right">
+                                             <font size = "3" color ="blue">Moment of Inertia about Z-Axis: </font>
+                                        </td>
+                                        <td align = "left">
+                                             <input id = "zeltron2" type = "text" size = "40" style = "background-color:yellow;">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td align = "right">
+                                             <font size = "3" color ="blue">Center of Mass (Coordinates): </font>
+                                        </td>
+                                        <td align = "left">
+                                             <input id = "zeltron3" type = "text" size = "40" style = "background-color:yellow;">
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td bgcolor = "#ccffff" align = "right">
+                                             <font size = "3" color ="blue">Area: </font>
+                                        </td>
+                                        <td align = "left">
+                                             <input id = "xeltron" type = "text" size = "40" style = "background-color:yellow;">
+                                        </td>
+                                   </tr>
+                              </table>
+                         </td>
+                    </tr>
+               </table>
+          </center>
+     </body>
+</html>
